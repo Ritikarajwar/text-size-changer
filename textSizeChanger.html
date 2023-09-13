@@ -50,16 +50,16 @@ The default font-size is 18px. -->
           let compstyle=window.getComputedStyle(para).fontSize
 
         let size= compstyle.split('').reverse()
-        console.log(size)
+        // console.log(size)
         let sizes=size.splice(0,2)
-        console.log(sizes)
+        // console.log(sizes)
         size.reverse()
-        console.log(size)
+        // console.log(size)
         
 
         console.log(size)
 
-          para.style.fontSize= Number(size) + 2 + 'px'
+          para.style.fontSize= Number(size.join('')) + 2 + 'px'
 
         }
 
@@ -67,12 +67,12 @@ The default font-size is 18px. -->
           let compstyle=window.getComputedStyle(para).fontSize
 
         
-          let size= compstyle.split('').reverse()
+        let size= compstyle.split('').reverse()
         let sizes=size.splice(0,2)
         size.reverse()
-        console.log(size)
+        // console.log(size)
 
-          para.style.fontSize= Number(size[0]+size[1]) - 2 + 'px'
+          para.style.fontSize= Number(size.join('')) - 2 + 'px'
 
         }
 
